@@ -1,0 +1,195 @@
+/* Tablets - 768px e menores */
+@media (max-width: 768px) {
+    .navbar-container {
+        height: 60px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        flex-direction: column;
+        background-color: var(--color-white);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 20px 0;
+        gap: 0;
+        z-index: 999;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        padding: 15px 0;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 80vh;
+        margin-top: 60px;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    /* Sections */
+    section {
+        padding: 60px 0;
+    }
+
+    .section-header h2 {
+        font-size: 36px;
+    }
+
+    /* Grids */
+    .sustainability-grid,
+    .benefits-grid,
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .technology-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Timeline */
+    .journey-timeline::before {
+        left: 30px;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 100px;
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-marker {
+        left: 5px;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    /* Dashboard */
+    .dashboard-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* FAQ */
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+/* Smartphones - 480px */
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .navbar-container {
+        height: 50px;
+        padding: 0 15px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 70vh;
+        margin-top: 50px;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    /* Sections */
+    section {
+        padding: 40px 0;
+    }
+
+    .section-header h2 {
+        font-size: 28px;
+    }
+
+    /* Cards */
+    .sustainability-card,
+    .benefit-card,
+    .testimonial-card {
+        padding: 20px 15px;
+    }
+
+    /* Dashboard */
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-number {
+        font-size: 32px;
+    }
+
+    /* Timeline */
+    .timeline-item {
+        padding-left: 80px;
+    }
+
+    .timeline-marker {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    /* Chatbot */
+    .chatbot {
+        width: calc(100vw - 40px);
+        right: 20px;
+        bottom: 70px;
+    }
+}
